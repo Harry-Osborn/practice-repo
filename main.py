@@ -40,6 +40,7 @@
         
 #         break
 #     else:
+<<<<<<< HEAD
 #         print("Invalid Input")pip install fastapi uvicorn
 
 
@@ -53,3 +54,14 @@ app = FastAPI()
 @app.get("/items/{item_id}")
 async def read_item(item_id: int):
     return {"item_id": item_id}
+=======
+#         print("Invalid Input")
+# main.py  
+from fastapi import FastAPI  
+  
+app = FastAPI()  
+ 
+@app.get("/")  
+async def root():  
+    return {"message": "Hello World"}  
+>>>>>>> bea78a9a828f56a33e1ca7b499de2ba4514d6511
